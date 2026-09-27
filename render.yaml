@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: productapi
+    runtime: docker
+    branch: main
+    envVars:
+      - key: SPRING_PROFILES_ACTIVE
+        value: prod
+      - key: DB_PASS
+        sync: false
